@@ -8,8 +8,15 @@
     <link rel="stylesheet" href="~/css/index.css" />
 }
 
+<section id="categories-and-desc">
+    @foreach (var category in Model)
+    {
+    <a class="category-anchor" href="~/blog/blogsbycategory/@category.Id">
+        <div class="category-card">
+            <h3>@category.Name</h3>
+            <p>@category.Description</p>
+        </div>
+    </a>
+    }
 
-@foreach(var category in Model)
-{
-    <p>@category.Name</p>
-}
+</section>

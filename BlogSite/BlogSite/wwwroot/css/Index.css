@@ -1,4 +1,23 @@
-﻿.categories {
-    display: flex;
-
+﻿#categories-and-desc {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+    column-gap: 30px;
+    grid-row-gap: 10px;
 }
+
+.category-card {
+    border: 1px solid #efefef;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.category-anchor {
+    text-decoration: none;
+    color: black;
+}
+
+.category-anchor:hover {
+    text-decoration: none;
+}
+
